@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CustomAlertView" customModule="CustomAlertViewSample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8nB-5A-3zb">
+                    <rect key="frame" x="185" y="25" width="59" height="30"/>
+                    <state key="normal" title="CANCEL">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="cancelButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="dbm-h9-ox8"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aWq-bJ-LF4">
+                    <rect key="frame" x="70" y="25" width="45" height="30"/>
+                    <state key="normal" title="LOGIN">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="loginButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="XQU-PT-q5c"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.94117647059999998" green="0.34509803919999998" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="8nB-5A-3zb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="25" id="4Fm-sI-Nzl"/>
+                <constraint firstAttribute="trailing" secondItem="8nB-5A-3zb" secondAttribute="trailing" constant="56" id="7hL-fq-agn"/>
+                <constraint firstAttribute="bottom" secondItem="aWq-bJ-LF4" secondAttribute="bottom" constant="45" id="9T6-d5-dE5"/>
+                <constraint firstItem="aWq-bJ-LF4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="25" id="BJo-VV-EbE"/>
+                <constraint firstItem="8nB-5A-3zb" firstAttribute="leading" secondItem="aWq-bJ-LF4" secondAttribute="trailing" constant="70" id="DG0-X3-2qz"/>
+                <constraint firstAttribute="bottom" secondItem="8nB-5A-3zb" secondAttribute="bottom" constant="45" id="rRS-0B-N76"/>
+                <constraint firstItem="aWq-bJ-LF4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="70" id="sno-we-kmJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cancelButton" destination="8nB-5A-3zb" id="N4S-Uu-7ms"/>
+                <outlet property="loginButton" destination="aWq-bJ-LF4" id="aAi-UG-ArL"/>
+            </connections>
+        </view>
+    </objects>
+</document>
